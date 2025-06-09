@@ -21,8 +21,10 @@
 
     function criaUsuario($usuario){
         if (!preg_match('/^[a-zA-Z]+\.{1}[a-zA-Z]+$/', $usuario)) {
-            return "O nome de usuário deve conter apenas letras.\n";
+            return "Usuário inválido!.\n";
         }
+
+        return "Usuário criado";
     }
 
     echo "Digite o usuário (Ex: nome.sobrneome): ";
@@ -31,7 +33,17 @@
     echo "Digite a senha: ";
     $senha = trim(fgets(STDIN));
 
-    echo criaSenha($senha);
-    echo "\n";
-    echo criaUsuario($usuario);
+    $resultadoSenha = criaSenha($senha);
+    $resultadoUsuario = criaUsuario($usuario);
+
+    if ($resultadoSenha == "Senha Forte!" && $resultadoUsuario == "Usuário criado") {
+        echo "Bem vindo!";
+    } else {
+        if ($resultadoUsuario != "Usuário criado") {
+            echo $resultadoUsuario . "\n";
+        }
+        if ($resultadoSenha != "Senha Forte!") {
+            echo $resultadoSenha . "\n";
+        }
+    }
 ?>
