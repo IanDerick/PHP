@@ -35,6 +35,5 @@
     }else {
         echo "Erro na preparação: " . $conn->error;
     }
-
     $conn->close();
 ?>
