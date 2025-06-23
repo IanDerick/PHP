@@ -30,4 +30,6 @@
         echo "Erro: " .$conn->error;
     }
     $conn->close();
+
+    //http://localhost:8080/php/OT6/ExcluiRegistro.php
 ?>
