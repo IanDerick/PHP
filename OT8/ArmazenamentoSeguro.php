@@ -6,5 +6,6 @@
         move_uploaded_file($_FILES["arquivo"]["tmp_name"], "uploads/$nomeUnico");
     
         echo "Arquivo salvo com sucesso!";
+        echo "aaaaaaaaaaa";
     }
 ?>
