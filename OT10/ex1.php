@@ -16,4 +16,5 @@
         echo "Nome: " . $row['nome'] . "\n";
         echo "E-mail: ". $row['email'] . "\n";
     }
+    
 ?>
