@@ -1,4 +1,5 @@
 <?php
+echo $variavel_que_nao_existe;
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     echo "<p style='color:red;'>ID inválido.</p>";
     exit;
