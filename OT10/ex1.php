@@ -36,9 +36,6 @@ try {
             padding: 8px;
             text-align: left;
         }
-        th {
-            background-color: #eee;
-        }
     </style>
 </head>
 <body>
@@ -62,4 +59,3 @@ try {
     <?php endif; ?>
 </body>
 </html>
-        
