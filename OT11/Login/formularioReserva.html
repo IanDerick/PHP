@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservar Sala</title>
+</head>
+<body>
+    <h1>Reserva de Sala</h1>
+
+    <form action="reservaSala.php" method="POST">
+        <label for="sala_id">Sala:</label>
+        <select name="sala_id" id="sala_id" required>
+            <option value="1">Sala 1</option>
+            <option value="2">Sala 2</option>
+            <option value="3">Sala 3</option>
+            <!-- Você pode gerar essas opções dinamicamente com PHP -->
+        </select><br><br>
+
+        <label for="data_reserva">Data:</label>
+        <input type="date" name="data_reserva" id="data_reserva" required><br><br>
+
+        <label for="hora_inicio">Hora de Início:</label>
+        <input type="time" name="hora_inicio" id="hora_inicio" required><br><br>
+
+        <label for="hora_fim">Hora de Fim:</label>
+        <input type="time" name="hora_fim" id="hora_fim" required><br><br>
+
+        <input type="submit" value="Reservar Sala">
+    </form>
+</body>
+</html>
