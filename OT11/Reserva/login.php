@@ -17,7 +17,7 @@
     if ($usuario && password_verify($password, $usuario['senha'])) {
         session_regenerate_id(true);
         $_SESSION['usuario'] = $usuario['nome'];
-        header("Location: dashboard.php");
+        header("Location: formularioReserva.php");
         exit();
     }else {
         $_SESSION['error'] = "Usuário ou senha inválido!";
