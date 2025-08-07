@@ -38,7 +38,7 @@
         <input type="time" name="hora_fim" id="hora_fim" required><br><br>
         <input type="submit" value="Reservar Sala">
     </form>
-    <form action="logout.php" method="POST" style="display:inline;">
+    <form action="logout.php" method="POST">
         <button type="submit">Sair</button>
     </form>
 </body>

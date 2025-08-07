@@ -29,6 +29,8 @@
         <input type="password" name="password_confirm" required /><br /><br />
         <input type="submit" value="Cadastrar"/>
     </form>
-    <p><a href="index.php">Voltar ao login</a></p>
+    <form action="index.php" method="POST">
+        <button type="submit">Voltar ao Login</button>
+    </form>
 </body>
 </html>

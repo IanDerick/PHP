@@ -20,8 +20,9 @@
         <label>Senha</label>
         <input type="password" name="password" require><br><br>
         <input type="submit" value="Entrar">
-        <a href="cria_usuario.php">Criar Usuário</a>
     </form>
-    
+    <form action="cria_usuario.php" method="POST">
+        <button type="submit">Criar Usuário</button>
+    </form>
 </body>
 </html>
